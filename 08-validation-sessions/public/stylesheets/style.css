@@ -1,0 +1,65 @@
+body {
+  font-weight: bold;
+  font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+  font-size: 0.8em;
+  
+}
+
+a {
+  color: #00B7FF;
+}
+
+.input label {
+  display: block;
+}
+form{
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  padding-left: 550px;
+}
+form button {
+  font: inherit;
+  margin: 10px 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: 2px 2px 2px #ccc;
+  color: white;
+  background: #3498db;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #2980b9;
+}
+
+.errors {
+  background: #e79892;
+  padding: 5px;
+  margin-bottom: 10px;
+  min-width: 200px;
+  display: inline-block;
+  border: 1px solid #e74c3c;
+}
+
+.errors ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.success {
+  background: #80cca0;
+  padding: 5px;
+}
+a{
+  text-decoration: none;
+  font-family: sans-serif,Arial;
+  border-left: -0.05em;
+  font-size:12px;
+  color:#333;
+  margin: auto;
+}
+a:hover{
+  color: gray;
+}

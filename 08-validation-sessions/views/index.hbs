@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+ <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Your Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript"></script>
+ <div class="" style="height:10px; background: #27aae1;"></div>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <img style="margin-top: -12px;" src="jiya.jpg" width=200; height=45;>
+                </a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </nav>
+ <div class="" style="height:10px; background: #27aae1;"></div>
+<br>
+<hr>
+{{# if success }}
+    <section class="success">
+        <h2>Successful Validation!</h2>
+    </section>
+{{ else }}
+    {{# if errors }}
+        <section class="errors">
+            <ul>
+                {{# each errors }}
+                    <li>{{ this.msg }}</li>
+                {{/each}}
+            </ul>
+        </section>
+    {{/if}}
+<br>
+
+    <form class="form-jiya" action="/submit" method="post">
+        <div class="input">
+            <label for="email">E-Mail</label>
+             <div class="input-group input-group-lg">
+             <span class="input-group-addon"> <span class="glyphicon glyphicon-envelope text-primary"></span> </span>
+            <input type="text" id="email" name="email">
+            </div> </div>
+        <div class="input">
+            <label for="password">Password</label>
+             <div class="input-group input-group-lg">
+            <span class="input-group-addon"> <span class="glyphicon glyphicon-lock text-primary"></span> </span>
+            <input type="password" id="password" name="password">
+            </div></div>
+        <div class="input">
+            <label for="confirmPassword">Confirm Password</label>
+             <div class="input-group input-group-lg">
+            <span class="input-group-addon"> <span class="glyphicon glyphicon-lock text-primary"></span> </span>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            </div></div>
+        <button class="btn btn-info btn-default" type="submit">Sign in</button>
+        <hr>
+        <div>
+				<a href="#" style="float:left;">Register New User</a>
+			</div>
+    </form>
+{{/if}}
