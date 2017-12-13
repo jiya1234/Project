@@ -1,13 +1,13 @@
 {
-  "name": "hotelApplication",
+  "name": "Hotela",
   "version": "1.0.0",
-  "description": "Hotel Management system",
+  "description": "Hotel management system",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "J Khan",
+  "author": "JGKHAN",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -21,6 +21,7 @@
     "express-validator": "^4.3.0",
     "mongodb": "^2.2.33",
     "mongoose": "*",
+    "nodemon": "^1.12.6",
     "passport": "*",
     "passport-http": "*",
     "passport-local": "^1.0.0"
